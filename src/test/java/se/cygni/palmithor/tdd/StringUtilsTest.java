@@ -19,6 +19,7 @@ public class StringUtilsTest {
         assertThat(stringUtils.isPalindrome("tattarrattat")).isTrue();
     }
 
+
     /**
      * For the following function, you choose if you want to use TDD or not
      */
