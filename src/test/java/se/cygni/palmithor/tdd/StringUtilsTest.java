@@ -24,6 +24,10 @@ public class StringUtilsTest {
      */
     @Test
     public void isBlank() {
-        // stringUtils.isBlank()
+        assertThat(stringUtils.isBlank(null)).isTrue();
+        assertThat(stringUtils.isBlank("")).isTrue();
+        assertThat(stringUtils.isBlank("    ")).isTrue();
+        assertThat(stringUtils.isBlank("2fwefw a")).isFalse();
+        assertThat(stringUtils.isBlank(" a")).isFalse();
     }
 }
